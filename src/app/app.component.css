@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     display: flex;
     width: 100%;
@@ -8,6 +8,7 @@ header {
     padding: 8px 12px;
     background-color: rgb(243, 243, 243);
     border-bottom: 2px solid var(--grey-2);
+    z-index: 3;
 }
 
 .brand-div {
@@ -180,7 +181,6 @@ nav a.active {
 }
 
 main {
-    padding-top: 80px;
     min-height: 100vh;
     min-height: 100svh;
 }

@@ -1,5 +1,31 @@
-<p>home works!</p>
-<div *ngFor="let product of products">
+<!-- <div *ngFor="let product of products">
     <img [src]="product.photo" alt="Product Image">
+</div> -->
+<div class="home-container">
+    <section class="home-cover">
+        <img class="decor bottom left" src="/assets/coverbg.png" alt="">
+        <img class="decor top right" src="/assets/coverbg.png" alt="">
+        <div class="cover-text">
+            <h1>Shop the World, <br>One Click at a Time</h1>
+            <p>Scroll down to enter the world of Gismos</p>
+        </div>
+        <img class="cover-img" src="/assets/bg.png" width="256" alt="">
+    </section>
+    <section class="products-grid">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+                <div class="card">
+                  <img [src]="product.photo" class="card-img-top" alt="Product Image">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">Price: {{ product.price }}</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+    </section>
 </div>
   
