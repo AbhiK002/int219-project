@@ -14,14 +14,41 @@
         <svg class="cart-icon" width="32" height="32" version="1.1" viewBox="0 0 47.967 48.049" xmlns="http://www.w3.org/2000/svg"><path d="m23.054 37.992c0 1.77-1.543 3.2048-3.4464 3.2048s-3.4464-1.4348-3.4464-3.2048c-1e-6 -1.77 1.543-3.2048 3.4464-3.2048s3.4464 1.4348 3.4464 3.2048zm-6.1096-9.3234s-4.4386 0-4.3118 2.7192c0.1268 2.7192 4.5654 2.7192 4.5654 2.7192l24.73-0.1648m-40.328-26.958s5.1162-0.65174 6.9069 0.93104c1.7907 1.5828 7.9301 19.925 7.9301 19.925s-0.63952 0.83792 4.7325 0.93104c5.372 0.0931 18.674 0.37242 20.337-0.37242 1.6628-0.74485 4.8604-13.128 4.8604-13.128s-0.63954-2.9794-4.9883-3.2587c-4.3488-0.27932-25.197 0.0931-25.197 0.0931s-3.8372 0.74485-4.2209 1.6759m28.513 24.21c0 1.77-1.5063 3.2048-3.3643 3.2048s-3.3643-1.4348-3.3643-3.2048c0-1.77 1.5063-3.2048 3.3643-3.2048s3.3643 1.4348 3.3643 3.2048z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2"></path></svg>
     </button>
     <aside class="cart-preview">
-        <span class="close-button" (click)="toggleCartPreview()">Close</span>
-        <h5>Your Cart</h5>
+        <span class="close-button" (click)="toggleCartPreview()"><span class="line"></span></span>
+        <h2>Your Cart</h2>
+        <button class="btn btn-success">Proceed to Checkout</button>
         <div class="cart-items-grid">
             <div class="cart-item">
                 <img src="/assets/products/1.jpg" height="128" alt="Product Image" class="cart-item-img">
                 <div class="cart-item-details">
-                    <h6>Product Name</h6>
-                    <span>$4000</span>
+                    <h6>HP w100</h6>
+                    <span>Rs.449</span>
+                    <div class="actions">
+                        <input type="number" id="amt" class="form-control" [defaultValue]="1" />
+                        <button type="button" class="btn btn-danger">Remove</button>    
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="/assets/products/14.jpg" height="128" alt="Product Image" class="cart-item-img">
+                <div class="cart-item-details">
+                    <h6>Bose Quietcomfort 45</h6>
+                    <span>Rs.20000</span>
+                    <div class="actions">
+                        <input type="number" id="amt" class="form-control" [defaultValue]="1" />
+                        <button type="button" class="btn btn-danger">Remove</button>    
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="/assets/products/17.jpg" height="128" alt="Product Image" class="cart-item-img">
+                <div class="cart-item-details">
+                    <h6>HP w100</h6>
+                    <span>Rs.449</span>
+                    <div class="actions">
+                        <input type="number" id="amt" class="form-control" [defaultValue]="1" />
+                        <button type="button" class="btn btn-danger">Remove</button>    
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,5 +58,12 @@
     <router-outlet></router-outlet>
 </main>
 <footer>
-    <span>Made by Abhineet Kelley</span>
+    <div>
+        <h4>Made by Abhineet Kelley</h4>
+        <span>INT219 Frontend Project</span>
+    </div>
+    <div>
+        <span>Developed with Angular and Bootstrap</span>
+        <span>along with JQuery, ES6 & CSS</span>
+    </div>
 </footer>
