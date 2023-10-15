@@ -3,29 +3,62 @@
 </div> -->
 <div class="home-container">
     <section class="home-cover">
+        <img class="decor middle left" src="/assets/coverbg.png" alt="">
         <img class="decor bottom left" src="/assets/coverbg.png" alt="">
         <img class="decor top right" src="/assets/coverbg.png" alt="">
+        <img class="decor middle right" src="/assets/coverbg.png" alt="">
         <div class="cover-text">
             <h1>Shop the World, <br>One Click at a Time</h1>
             <p>Scroll down to enter the world of Gismos</p>
         </div>
         <img class="cover-img" src="/assets/bg.png" width="256" alt="">
     </section>
-    <section class="products-grid">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
-                <div class="card">
-                  <img [src]="product.photo" class="card-img-top" alt="Product Image">
-                  <div class="card-body">
-                    <h5 class="card-title">{{ product.title }}</h5>
-                    <p class="card-text">Price: {{ product.price }}</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                  </div>
-                </div>
+    <section class="filters-section">
+      <div class="filter-group">
+        <label for="brand">Filter by Brand:</label>
+        <select id="brand-dropdown">
+          <option value="brand1">HP</option>
+          <option value="brand2">ASUS</option>
+          <option value="brand2">Redgear</option>
+          <option value="brand2">Sony</option>
+          <option value="brand2">Logitech</option>
+        </select>
+        <label for="price" id="price-label">Filter by Price:</label>
+        <input type="number" id="price-min" placeholder="Min">
+        <input type="number" id="price-max" placeholder="Max">
+      </div>
+      <div class="filter-group">
+        <label for="hello">Sort by</label>
+        <select name="sort" id="sorting">
+          <option value="cat">Category</option>
+          <option value="plth">Price (Low to High)</option>
+          <option value="phtl">Price (High to Low)</option>
+          <option value="nlth">Name (A to Z)</option>
+          <option value="nhtl">Name (Z to A)</option>
+        </select>
+      </div>
+    </section>
+    <section class="products-main">
+      <aside class="cart-interactive-section">
+        <img class="interactive-cart" src="/assets/cart.png" alt="Cart" (click)="toggleCartPreview()">
+      </aside>
+      <div class="row products-grid">
+        <div draggable="true" class="card-container" *ngFor="let product of products; let i = index" [id]="i"
+        [class.pressed]="heldDownComponent == product"
+        (click)="clickProduct(product)">
+          <div class="card">
+            <img [src]="product.photo" class="card-img-top" alt="Product Image" draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.title }}</h5>
+              <p class="card-price">Rs.{{ product.price }}</p>
+              <div class="buttons">
+                <button id="but1" class="btn btn-primary">Add to Cart</button>
+                <button id="but2" class="btn btn-outline-secondary">Wishlist</button>
               </div>
             </div>
-          </div>          
+          </div>
+        </div>
+      </div>
     </section>
 </div>
   

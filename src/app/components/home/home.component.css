@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    z-index: 2;
 }
 
 .home-cover .cover-text {
@@ -24,19 +26,177 @@
     width: 40%;
 }
 
-.home-cover .decor.bottom.left {
+.decor.bottom.left, .decor.middle.left {
     position: absolute;
     height: 120px;
     bottom: 0;
     left: 0;
 }
+.decor.middle.left {
+    bottom: none;
+    top: 40px
+}
 
-.home-cover .decor.top.right {
+.decor.top.right {
     position: absolute;
     height: 120px;
-    bottom: none;
-    left: none;
     top: 0;
     right: 0;
     rotate: 180deg;
+}
+.decor.middle.right {
+    position: absolute;
+    height: 120px;
+    rotate: 180deg;
+    bottom: 40px;
+    right: 0;
+}
+
+.filters-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-6);
+    height: 120px;
+    border-bottom: 2px solid var(--color-3);
+    z-index: 2;
+    padding: 12px;
+}
+
+.filter-group {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.filters-section input {
+    border-radius: 8px;
+    border: 1px solid var(--grey-2)
+}
+
+#price-label {
+    margin-left: 8px;
+}
+
+#price-min, #price-max {
+    width: 80px
+}
+
+.products-main {
+    background-color: var(--grey-5);
+    background-image: url("../../../assets/tile.png");
+    background-size: 50px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+    gap: 24px;
+}
+
+.cart-interactive-section {
+    display: flex;
+    width: 450px;
+    min-width: 360px;
+}
+
+.interactive-cart {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -40%);
+    left: 80px;
+    height: 500px;
+    width: auto;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.products-grid {
+    flex-grow: 1;
+}
+
+.products-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-container {
+    padding: 0;
+    min-height: 300px;
+    user-select: none;
+}
+
+.card-container.pressed {
+    cursor: grab;
+    transform: translate(0, -16px);
+    animation: wobble 0.4s forwards linear infinite;
+}
+
+.card {
+    margin: 0;
+    background-color: white;
+    border: 2px solid var(--grey-3);
+    border-radius: 12px;
+    padding: 8px;
+    padding-top: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    transition: 300ms;
+}
+@keyframes wobble {
+    0% {rotate: 1deg}
+    50% {rotate: -1deg;}
+    100% {rotate: 1deg;}
+}
+.card:hover {
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 156px;
+    object-fit: contain;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.card-body .card-title {
+    font-size: 22px;
+}
+.card-body .card-price {
+    font-size: 20px;
+}
+
+.card-body .buttons {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    width: 100%;
+}
+.card-body .buttons button {
+    padding: 8px 4px;
+    width: 100%;
+}
+#but1 {
+    flex-grow: 1;
+}
+#but2 {
+    width: 140px;
+}
+
+button.btn {
+    font-size: 16px;
+}
+button.btn.btn-primary {
+    background-color: var(--color-3);
+    font-size: 16px;
+    border: none;
 }
