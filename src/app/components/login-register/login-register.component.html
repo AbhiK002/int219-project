@@ -1,1 +1,17 @@
-<p>login-register works!</p>
+<div class="login-register-container">
+    <div class="login-form-div">
+        <h2>Login</h2>
+        <form (ngSubmit)="login()" #loginForm="ngForm">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="loginEmail" ngModel required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword" ngModel required
+                    class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>

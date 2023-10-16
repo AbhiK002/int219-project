@@ -1,0 +1,12 @@
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-div {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-3);
+    padding: 24px;
+}
