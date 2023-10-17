@@ -39,13 +39,12 @@
       </aside>
       <div class="row products-grid">
         <div class="card-container" *ngFor="let product of productsCopy; let i = index" [id]="i"
-        [class.pressed]="heldDownComponent == product"
-        (click)="clickProduct(product)">
+        [class.pressed]="heldDownComponent == product">
           <div class="card">
-            <img [src]="product.photo" class="card-img-top" alt="Product Image" draggable="false">
+            <img (click)="clickProduct(product)" [src]="product.photo" class="card-img-top" alt="Product Image" draggable="false">
             <div class="card-body">
-              <h5 class="card-title">{{ product.title }}</h5>
-              <p class="card-price">Rs.{{ product.price }}</p>
+              <h5 class="card-title" (click)="clickProduct(product)">{{ product.title }}</h5>
+              <p class="card-price" (click)="clickProduct(product)">Rs.{{ product.price }}</p>
               <div class="buttons">
                 <button id="but1" class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
                 <button id="but2" class="btn btn-outline-secondary">Wishlist</button>
