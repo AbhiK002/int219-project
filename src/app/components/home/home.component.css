@@ -104,12 +104,31 @@
 .interactive-cart {
     position: fixed;
     top: 50%;
-    transform: translate(0, -40%);
+    translate: 0px -40%;
     left: 80px;
     height: 500px;
     width: auto;
     z-index: 0;
     cursor: pointer;
+    transition: rotate 300ms;
+    animation: shake 0.2s forwards linear infinite;
+    animation-play-state: paused;
+}
+.interactive-cart img {
+    object-fit: contain;
+    transition: transform 300ms;
+    height: 100%;
+}
+.interactive-cart.shake {
+    animation-play-state: running;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(2deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-2deg);}
+    100% {transform: rotate(0deg);}
 }
 
 .products-grid {

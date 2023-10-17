@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as $ from 'jquery';
 
@@ -20,6 +20,11 @@ export class HomeComponent implements OnInit {
   }
 
   toggleCartPreview() {
+    const cart = $(".interactive-cart");
+    cart.addClass("shake");
+    setTimeout(() => {
+      cart.removeClass("shake");
+    }, 400);
     $(".cart-preview").toggleClass("enabled");
   }
 
@@ -43,34 +48,33 @@ export class HomeComponent implements OnInit {
     // redirect to the product page for the current product
   }
 
-  isDragging: boolean = false;
-  offsetX: number = 0;
-  offsetY: number = 0;
-
-  startDrag(event: MouseEvent): void {
-    this.isDragging = true;
-    this.offsetX = event.clientX;
-    this.offsetY = event.clientY;
+  addToCart() {
+    console.log("added to cart");
   }
 
-  drag(event: MouseEvent): void {
-    if (this.isDragging) {
-      const newX = event.clientX - this.offsetX;
-      const newY = event.clientY - this.offsetY;
+  previousScrollPosition: number = 0;
 
-      // Update the position of the draggable element
-      const draggableElement = document.querySelector('.draggable') as HTMLElement;
-      draggableElement.style.left = newX + 'px';
-      draggableElement.style.top = newY + 'px';
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    const cart = $(".interactive-cart");
+    const cartImg = $(".interactive-cart img");
+    const currentScrollPosition = window.scrollY;
+    const pixelsScrolled = Math.abs(currentScrollPosition - this.previousScrollPosition);
 
-      // Update the offset for the next drag event
-      this.offsetX = event.clientX;
-      this.offsetY = event.clientY;
+    let range = 10;
+    let angleRange = 8;
+    let intervalPX = 300;
+    cartImg.css("transform", `translateX(${Math.abs(currentScrollPosition % (2*intervalPX) - intervalPX)/intervalPX * range - range/2}px)`);
+    cartImg.css("rotate", `${Math.abs(currentScrollPosition % (2*intervalPX) - intervalPX)/intervalPX * angleRange - angleRange/2}deg`)
+
+    if (currentScrollPosition > this.previousScrollPosition) {
+      if (pixelsScrolled > 2) cart.css("rotate", "0deg");
+      
+    } 
+    else if (currentScrollPosition < this.previousScrollPosition) {
+      if (pixelsScrolled > 2) cart.css("rotate", "180deg");
     }
-  }
 
-  endDrag(): void {
-    this.isDragging = false;
+    this.previousScrollPosition = currentScrollPosition;
   }
 }
-
