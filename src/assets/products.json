@@ -214,5 +214,109 @@
       "category": "Webcams",
       "outOfStock": true,
       "photo": "/assets/products/1.jpg"
+    },
+    {
+      "title": "Apple MacBook Air (2022)",
+      "description": "13.3-inch Liquid Retina display, M2 chip, 8GB unified memory, 256GB SSD storage, Backlit Magic Keyboard, Touch ID, Force Touch trackpad, 720p FaceTime HD camera, Two Thunderbolt/USB 4 ports, MagSafe 3 charging port.",
+      "price": 114000,
+      "category": "Laptop",
+      "outOfStock": false,
+      "photo": "/assets/products/28.jpg"
+    },
+    {
+      "title": "Dell XPS 13 (2023)",
+      "description": "13.4-inch InfinityEdge display, Intel Core i7-1360P processor, 16GB LPDDR5 RAM, 512GB PCIe NVMe SSD storage, Backlit keyboard with fingerprint reader, Windows 11 Home, Two Thunderbolt 4 ports, USB-C port, Full-size SD card reader.",
+      "price": 124000,
+      "category": "Laptop",
+      "outOfStock": false,
+      "photo": "/assets/products/29.png"
+    },
+    {
+      "title": "Microsoft Surface Laptop 4 (2021)",
+      "description": "13.5-inch PixelSense display with 2256 x 1504 resolution, AMD Ryzen 5 4680U processor, 16GB LPDDR4x RAM, 512GB SSD storage, Backlit Alcantara keyboard with fingerprint reader, Windows 11 Home, One USB-C port, One USB-A port, Surface Connect port.",
+      "price": 73000,
+      "category": "Laptop",
+      "outOfStock": false,
+      "photo": "/assets/products/30.jpg"
+    },
+    {
+      "title": "Logitech MX Master 3S",
+      "description": "Wireless ergonomic mouse with 8000 DPI optical sensor, 7 programmable buttons, MagSpeed scroll wheel, Bluetooth or USB-C receiver, Customizable RGB lighting.",
+      "price": 10995,
+      "category": "Mouse",
+      "outOfStock": false,
+      "photo": "/assets/products/31.jpg"
+    },
+    {
+      "title": "Microsoft Bluetooth Precision Mouse",
+      "description": "Bluetooth mouse with 4000 DPI optical sensor, 3 programmable buttons, Ergonomic design, Windows 10 or 11 required.",
+      "price": 10480,
+      "category": "Mouse",
+      "outOfStock": false,
+      "photo": "/assets/products/32.jpg"
+    },
+    {
+      "title": "Ducky One 3 SF Mechanical Keyboard",
+      "description": "65% form factor mechanical keyboard with Cherry MX switches, Double-shot PBT keycaps, RGB backlighting, USB-C connectivity.",
+      "price": 11576,
+      "category": "Keyboard",
+      "outOfStock": false,
+      "photo": "/assets/products/33.jpg"
+    },
+    {
+      "title": "Razer BlackWidow V3 Mechanical Keyboard",
+      "description": "Full-size mechanical keyboard with Razer Green switches, Doubleshot ABS keycaps, RGB backlighting, USB-C connectivity.",
+      "price": 11100,
+      "category": "Keyboard",
+      "outOfStock": false,
+      "photo": "/assets/products/34.jpg"
+    },
+    {
+      "title": "Redragon Kumara K552",
+      "description": "A compact mechanical gaming keyboard with rainbow LED backlight and 87 keys featuring dust-proof switches, ergonomic design, anti-ghosting, and multimedia keys.",
+      "price": 2090,
+      "category": "Keyboard",
+      "outOfStock": false,
+      "photo": "/assets/products/40.jpg"
+    },
+    {
+      "title": "Apple iPhone 13 Pro Max",
+      "description": "The iPhone 13 Pro Max is Apple's most advanced smartphone, with a large 6.7-inch Super Retina XDR display, a triple-lens rear camera system with LiDAR, and the new A15 Bionic chip. It also has a long-lasting battery and a sleek design.",
+      "price": 129900,
+      "category": "Smartphone",
+      "outOfStock": false,
+      "photo": "/assets/products/35.jpg"
+    },
+    {
+      "title": "Samsung Galaxy S22 Ultra",
+      "description": "The Galaxy S22 Ultra is Samsung's flagship smartphone, with a large 6.8-inch Dynamic AMOLED 2X display, a quad-lens rear camera system with a 108MP main sensor, and the new Snapdragon 8 Gen 1 chip. It also has a built-in S Pen stylus and a long-lasting battery.",
+      "price": 80869,
+      "category": "Smartphone",
+      "outOfStock": false,
+      "photo": "/assets/products/36.jpg"
+    },
+    {
+      "title": "Google Pixel 6 Pro",
+      "description": "The Pixel 6 Pro is Google's latest flagship smartphone, with a unique design, a triple-lens rear camera system with a 50MP main sensor, and the new Google Tensor chip. It also has a large 6.7-inch AMOLED display and a long-lasting battery.",
+      "price": 47900,
+      "category": "Smartphone",
+      "outOfStock": false,
+      "photo": "/assets/products/37.jpg"
+    },
+    {
+      "title": "OnePlus 10 Pro",
+      "description": "The OnePlus 10 Pro is OnePlus' latest flagship smartphone, with a large 6.7-inch AMOLED display, a triple-lens rear camera system with a 48MP main sensor, and the new Snapdragon 8 Gen 1 chip. It also has a fast-charging battery and a sleek design.",
+      "price": 52999,
+      "category": "Smartphone",
+      "outOfStock": false,
+      "photo": "/assets/products/38.jpg"
+    },
+    {
+      "title": "Xiaomi 12 Pro",
+      "description": "The Xiaomi 12 Pro is Xiaomi's latest flagship smartphone, with a large 6.7-inch AMOLED display, a triple-lens rear camera system with a 50MP main sensor, and the new Snapdragon 8 Gen 1 chip. It also has a fast-charging battery and a sleek design.",
+      "price": 41199,
+      "category": "Smartphone",
+      "outOfStock": false,
+      "photo": "/assets/products/39.jpg"
     }
 ]
