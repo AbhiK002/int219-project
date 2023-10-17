@@ -9,14 +9,38 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
   products: any[] = [];
+  productsCopy: any[] = [];
   heldDownComponent: any = null;
 
   constructor(private http: HttpClient) {}
 
+  sortingModes: any = [
+    { value: "featured", name: "Featured", func: null },
+    { value: "price-asc", name: "Price (Low to High)", func: (a: any, b: any) => a.price - b.price },
+    { value: "price-desc", name: "Price (High to Low)", func: (a: any, b: any) => b.price - a.price },
+    { value: "name-asc", name: "Name (A-Z)", func: (a: any, b: any) => a.title.localeCompare(b.title) },
+    { value: "name-desc", name: "Name (Z-A)", func: (a: any, b: any) => b.title.localeCompare(a.title) }
+  ]
+  shuffleArray(array: Object[]) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+  sortingMode: number = 0;
   ngOnInit() {
     this.http.get('assets/products.json').subscribe((data: any) => {
       this.products = data;
+      this.productsCopy = [...this.products];
+      this.shuffleArray(this.productsCopy);
     });
+  }
+  sortTheProducts(event: any) {
+    this.sortingMode = event.target.value;
+    this.productsCopy = [...this.products];
+
+    if (this.sortingModes[this.sortingMode].value != "featured") this.productsCopy.sort(this.sortingModes[this.sortingMode].func);
+    else this.shuffleArray(this.productsCopy);
   }
 
   toggleCartPreview() {
