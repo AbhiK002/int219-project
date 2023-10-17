@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-register',
@@ -8,13 +9,23 @@ import { NgForm } from '@angular/forms';
 })
 
 export class LoginRegisterComponent {
+  isRegistering: boolean = false;
+
+  constructor(private router: Router) {
+    // constructor logic
+  }  
+
+  switchLoginRegister() {
+    this.isRegistering = !this.isRegistering;
+  }
+
   login(): void {
-    console.log("Logged In!");
-    
+    alert("Logged In!");
+    this.router.navigate(['/']);
   }
 
   register(): void {
-    console.log("Registered!");
-    
+    alert("Registered!");
+    this.router.navigate(['/']);
   }
 }

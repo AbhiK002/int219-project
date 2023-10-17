@@ -1,1 +1,47 @@
-<p>checkout works!</p>
+<div class="checkout-div">
+    <div class="col-md-8 checkout-container">
+        <h2>Order Summary</h2>
+        <ul class="order-summary">
+            <li class="order-item">
+                <img src="/assets/products/1.jpg" width="128" alt="Product Image">
+                <div class="order-details">
+                    <h4>HP w100</h4>
+                    <p>Rs.449</p>
+                    <button type="button" class="btn btn-outline-danger">Remove Item</button>
+                </div>
+            </li>
+            <li class="order-item">
+                <img src="/assets/products/14.jpg" width="128" alt="Product Image">
+                <div class="order-details">
+                    <h4>Bose Quietcomfort 45</h4>
+                    <p>Rs.20000</p>
+                    <button type="button" class="btn btn-outline-danger">Remove Item</button>
+                </div>
+            </li>
+            <li class="order-item">
+                <img src="/assets/products/17.jpg" width="128" alt="Product Image">
+                <div class="order-details">
+                    <h4>Asus ROG Strix G15</h4>
+                    <p>Rs.88000</p>
+                    <button type="button" class="btn btn-outline-danger">Remove Item</button>
+                </div>
+            </li>
+        </ul>
+        <h4 id="g-total">Grand Total Price with taxes: Rs.{{88000 + 20000 + 449 + 1240}}</h4>
+
+        <h2>Deliver to Address</h2>
+        <textarea rows="4" style="padding: 8px; caret-color: black;" placeholder="Enter your address">123, ABC Street, DEF City, FGH State, XYZ Country, 12345678</textarea>
+
+        <h2>Payment Options</h2>
+        <div class="payment-options">
+            <div class="form-check payment-option" *ngFor="let paymentOption of paymentOptions">
+                <input type="radio" class="form-check-input" [id]="paymentOption + '_id'" name="paymentOption" [value]="paymentOption">
+                <label class="form-check-label" [for]="paymentOption + '_id'">{{paymentOption}}</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary place-order-button" (click)="placeOrder()">Place Order</button>
+            <button class="btn btn-outline-secondary cancel-order-button" (click)="navigateToHome()">Cancel</button>    
+        </div>
+    </div>
+</div>

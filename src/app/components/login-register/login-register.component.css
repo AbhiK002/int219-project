@@ -1,12 +1,54 @@
 .login-register-container {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-6);
+    padding: 24px;
 }
 
 .login-form-div {
+    width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    background-color: var(--grey-3);
-    padding: 24px;
+    gap: 36px;
+    padding: 36px;
+    border: 2px solid var(--color-4);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login-form-div h2 {
+    margin: 0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.login-form input {
+    font-size: 18px;
+    padding: 8px 12px;
+    min-width: 300px;
+    border-color: var(--grey-2);
+}
+.login-form input:focus {
+    outline-color: red;
+}
+
+.login-form button {
+    font-size: 18px;
+}
+
+.login-form .submit-button {
+    margin-top: 12px;
+}
+
+.login-form .switch-button {
+    padding: 4px 8px;
+    font-size: 18px;
 }

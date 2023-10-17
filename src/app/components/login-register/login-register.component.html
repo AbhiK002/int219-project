@@ -1,17 +1,23 @@
 <div class="login-register-container">
     <div class="login-form-div">
-        <h2>Login</h2>
-        <form (ngSubmit)="login()" #loginForm="ngForm">
+        <h2>{{isRegistering ? "Register with Gismos" : "Login to Gismos"}}</h2>
+        <form class="login-form" (ngSubmit)="isRegistering ? register() : login()" #loginForm="ngForm">
             <div class="form-group">
                 <label for="loginEmail">Email</label>
-                <input type="email" id="loginEmail" name="loginEmail" ngModel required class="form-control">
+                <input type="email" placeholder="your@email.here" id="loginEmail" name="loginEmail" ngModel required class="form-control">
             </div>
             <div class="form-group">
                 <label for="loginPassword">Password</label>
-                <input type="password" id="loginPassword" name="loginPassword" ngModel required
+                <input type="password" placeholder="Enter password" id="loginPassword" name="loginPassword" ngModel required
                     class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <div *ngIf="isRegistering" class="form-group">
+                <label for="loginPassword">Confirm Password</label>
+                <input type="password" placeholder="Enter password" id="loginPassword" name="loginPassword" ngModel required
+                    class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary submit-button">{{isRegistering ? "Register" : "Login"}}</button>
+            <button type="button" class="btn btn-link switch-button" (click)="switchLoginRegister()">{{isRegistering ? "Already registered? Log in instead" : "Don't have an account? Register instead."}}</button>
         </form>
     </div>
 </div>
