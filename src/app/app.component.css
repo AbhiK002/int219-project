@@ -94,8 +94,8 @@ nav a.active {
 
 .cart-preview .close-button {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 12px;
+    right: 12px;
     padding: 8px;
     height: 42px;
     width: 42px;

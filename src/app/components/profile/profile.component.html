@@ -1,1 +1,16 @@
-<p>profile works!</p>
+<div class="profile-div">
+    <aside class="main-menu">
+        <h3>Main Menu</h3>
+        <ul>
+            <li class="menu-item" (click)="switchScreen(0)">Profile</li>
+            <li class="menu-item" (click)="switchScreen(1)">Preferences</li>
+            <li class="menu-item" (click)="switchScreen(2)">Settings</li>
+        </ul>
+        <button class="btn btn-danger log-out-button">Log Out</button>
+    </aside>
+    <div class="profile-container">
+        <div class="screen profile" *ngIf="currentlyViewing == 0">PROFILE</div>
+        <div class="screen preferences" *ngIf="currentlyViewing == 1">PREFERENCES</div>
+        <div class="screen settings" *ngIf="currentlyViewing == 2">SETTINGS</div>
+    </div>
+</div>
