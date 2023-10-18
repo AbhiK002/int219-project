@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-}
+  }
   sortingMode: number = 0;
   ngOnInit() {
     this.http.get('assets/products.json').subscribe((data: any) => {

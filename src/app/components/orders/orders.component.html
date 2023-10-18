@@ -1,1 +1,24 @@
-<p>orders works!</p>
+<div class="orders-div">
+    <div class="orders-container">
+        <h2>Your Orders</h2>
+        <ul class="orders-list">
+            <li class="order-item" *ngFor="let order of orders; let i = index">
+                <img [src]="order.photo" alt="order photo" width="168">
+                <div class="order-details">
+                    <h4>{{order.title}}</h4>
+                    <h5>{{order.price}}</h5>
+                    <h3>{{order.status}}</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="recommendations">
+        <h3>Recommended Products</h3>
+        <div class="products-grid">
+            <div class="item-card" *ngFor="let product of products; let i = index">
+                <img [src]="product.photo" alt="image" height="128">
+                <h5>{{product.title}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

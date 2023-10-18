@@ -163,7 +163,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    cursor: default;
+    cursor: grab;
     transition: 300ms;
 }
 @keyframes wobble {
@@ -176,12 +176,12 @@
 }
 .card:active {
     z-index: 5;
+    cursor: grabbing;
 }
 
 .card-img-top {
     height: 156px;
     object-fit: contain;
-    cursor: pointer;
 }
 
 .card-body {
@@ -201,6 +201,7 @@
 .card-body .card-title:hover,
 .card-body .card-price:hover {
     text-decoration: underline;
+    color: var(--color-1)
 }
 
 .card-body .buttons {
