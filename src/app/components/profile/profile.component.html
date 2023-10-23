@@ -9,8 +9,21 @@
         <button class="btn btn-danger log-out-button">Log Out</button>
     </aside>
     <div class="profile-container">
-        <div class="screen profile" *ngIf="currentlyViewing == 0">PROFILE</div>
-        <div class="screen preferences" *ngIf="currentlyViewing == 1">PREFERENCES</div>
+        <div class="screen profile" *ngIf="currentlyViewing == 0">
+            <div class="profile-container">
+                <img src="/assets/user-default.png" height="128" alt="">
+                <h3 class="details">Name</h3><span class="value">Guest User 3245</span>
+                <h3 class="details">Email</h3> <span class="value">your.name@email.com</span>
+                <h3 class="details">Phone</h3> <span class="value">+12 12456 75433</span>
+                <h3 class="details">Reputation</h3> <span class="value">32</span>
+                <button class="btn btn-outline-danger">Change Password</button>
+            </div>
+        </div>
+        <div class="screen preferences" *ngIf="currentlyViewing == 1">
+            <div class="preferences-container">
+                
+            </div>
+        </div>
         <div class="screen settings" *ngIf="currentlyViewing == 2">SETTINGS</div>
     </div>
 </div>
