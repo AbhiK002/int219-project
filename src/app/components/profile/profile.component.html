@@ -1,29 +1,82 @@
 <div class="profile-div">
-    <aside class="main-menu">
-        <h3>Main Menu</h3>
-        <ul>
-            <li class="menu-item" (click)="switchScreen(0)">Profile</li>
-            <li class="menu-item" (click)="switchScreen(1)">Preferences</li>
-            <li class="menu-item" (click)="switchScreen(2)">Settings</li>
-        </ul>
-        <button class="btn btn-danger log-out-button">Log Out</button>
+    <aside class="main-menu-container">
+        <div class="main-menu">
+            <h3>Main Menu</h3>
+            <ul>
+                <li class="menu-item" (click)="switchScreen(0)" [ngStyle]="(currentlyViewing == 0) ? {backgroundColor: 'var(--selected-color)'} : null">Profile</li>
+                <li class="menu-item" (click)="switchScreen(1)" [ngStyle]="(currentlyViewing == 1) ? {backgroundColor: 'var(--selected-color)'} : null">Preferences</li>
+                <li class="menu-item" (click)="switchScreen(2)" [ngStyle]="(currentlyViewing == 2) ? {backgroundColor: 'var(--selected-color)'} : null">Settings</li>
+            </ul>
+            <button class="btn btn-danger log-out-button">Log Out</button>    
+        </div>
     </aside>
-    <div class="profile-container">
+    <div class="page-container">
         <div class="screen profile" *ngIf="currentlyViewing == 0">
             <div class="profile-container">
-                <img src="/assets/user-default.png" height="128" alt="">
+                <img src="/assets/user-default.png" height="128" alt="user img" class="user-img">
                 <h3 class="details">Name</h3><span class="value">Guest User 3245</span>
                 <h3 class="details">Email</h3> <span class="value">your.name@email.com</span>
                 <h3 class="details">Phone</h3> <span class="value">+12 12456 75433</span>
                 <h3 class="details">Reputation</h3> <span class="value">32</span>
-                <button class="btn btn-outline-danger">Change Password</button>
+                <button class="btn btn-outline-danger change-password-button">Change Password</button>
             </div>
         </div>
         <div class="screen preferences" *ngIf="currentlyViewing == 1">
             <div class="preferences-container">
-                
+                <h3>Your Preferences</h3>
+                <span class="preference-item">
+                    <input type="checkbox" name="c1" id="c1" class="check" checked>
+                    <label for="c1">Send emails about new product launches</label>
+                </span>
+                <span class="preference-item">
+                    <input type="checkbox" name="c2" id="c2" class="check" checked>
+                    <label for="c2">Send emails if any product in my wishlist changes</label>
+                </span>
+                <span class="preference-item">
+                    <input type="checkbox" name="c3" id="c3" class="check" checked>
+                    <label for="c3">Send emails related to account settings and changes</label>
+                </span>
+                <span class="preference-item">
+                    <input type="checkbox" name="c4" id="c4" class="check" checked>
+                    <label for="c4">Send emails about the latest news about Gismos</label>
+                </span>
+                <span class="preference-item">
+                    <input type="checkbox" name="c5" id="c5" class="check" checked>
+                    <label for="c5">Send emails related to placed orders and tracking progress</label>
+                </span>
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" (click)="resetChecks()">Reset Changes</button>
+                </div>
             </div>
         </div>
-        <div class="screen settings" *ngIf="currentlyViewing == 2">SETTINGS</div>
+        <div class="screen settings" *ngIf="currentlyViewing == 2">
+            <h3>Settings</h3>
+            <div class="settings-category">
+                <h4>Account</h4>
+                <p>Name: <input type="text" placeholder="Name" value="Guest User 3245" name="" id=""></p>
+                <p>Email: <input type="email" placeholder="Email" value="your.name@email.com" name="" id=""></p>
+                <p>Phone: <input type="text" placeholder="Phone" value="+12 12456 75433" name="" id=""></p>
+                <button type="button" class="btn btn-success save-button">Save Changes</button>
+            </div>
+            <div class="settings-category">
+                <h4>Notifications</h4>
+                <p><input type="checkbox" class="check" name="" id="" (change)="toggleGlob()" [checked]="globNotifs == true"> All notifications</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false"> Gismos push notifications</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false" checked> Product notifications</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false"> Wishlist notifications</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false" checked> Abnormal login notifications</p>
+                <button type="button" class="btn btn-success save-button">Save Changes</button>
+            </div>
+            <div class="settings-category">
+                <h4>Gismos Settings</h4>
+                <p><input type="checkbox" class="check" name="" id="" (change)="toggleGlob2()" [checked]="globNotifs2 == true"> All settings</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false"> Only show products safe for children</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false" checked> Automatically play product videos</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false"> Send anonymous data to Gismos for improvement</p>
+                <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false" checked> Show personalized results based on past browsing history</p>
+                <button type="button" class="btn btn-success save-button">Save Changes</button>
+            </div>
+        </div>
     </div>
 </div>
