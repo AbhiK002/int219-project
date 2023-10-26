@@ -1,1 +1,6 @@
-<p>product works!</p>
+<div [ngSwitch]="pageStatus">
+    <h2 *ngSwitchCase="101">Loading...</h2>
+    <h1 *ngSwitchCase="200">{{product.title}}</h1>
+    <h3 *ngSwitchCase="404">Product Not Found</h3>
+    <h4 style="color: red" *ngSwitchDefault>Server Error</h4>
+<div>

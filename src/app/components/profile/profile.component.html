@@ -45,7 +45,7 @@
                     <label for="c5">Send emails related to placed orders and tracking progress</label>
                 </span>
                 <div class="buttons">
-                    <button type="button" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-primary" (click)="saveChanges($event)">Save Changes</button>
                     <button type="button" class="btn btn-secondary" (click)="resetChecks()">Reset Changes</button>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 <p>Name: <input type="text" placeholder="Name" value="Guest User 3245" name="" id=""></p>
                 <p>Email: <input type="email" placeholder="Email" value="your.name@email.com" name="" id=""></p>
                 <p>Phone: <input type="text" placeholder="Phone" value="+12 12456 75433" name="" id=""></p>
-                <button type="button" class="btn btn-success save-button">Save Changes</button>
+                <button type="button" class="btn btn-success save-button" (click)="saveChanges($event)">Save Changes</button>
             </div>
             <div class="settings-category">
                 <h4>Notifications</h4>
@@ -66,7 +66,7 @@
                 <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false" checked> Product notifications</p>
                 <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false"> Wishlist notifications</p>
                 <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs == false" checked> Abnormal login notifications</p>
-                <button type="button" class="btn btn-success save-button">Save Changes</button>
+                <button type="button" class="btn btn-success save-button" (click)="saveChanges($event)">Save Changes</button>
             </div>
             <div class="settings-category">
                 <h4>Gismos Settings</h4>
@@ -75,7 +75,7 @@
                 <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false" checked> Automatically play product videos</p>
                 <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false"> Send anonymous data to Gismos for improvement</p>
                 <p><input type="checkbox" class="check" name="" id="" [disabled]="globNotifs2 == false" checked> Show personalized results based on past browsing history</p>
-                <button type="button" class="btn btn-success save-button">Save Changes</button>
+                <button type="button" class="btn btn-success save-button" (click)="saveChanges($event)">Save Changes</button>
             </div>
         </div>
     </div>

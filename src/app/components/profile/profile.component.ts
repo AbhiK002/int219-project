@@ -23,4 +23,14 @@ export class ProfileComponent {
   resetChecks() {
     $(".preference-item .check").prop("checked", false);
   }
+
+  saveChanges(event: any) {
+    event.target.innerText = "Saving..."
+    setTimeout(() => {
+      event.target.innerText = "Saved!";
+      setTimeout(() => {
+        event.target.innerText = "Save Changes";
+      }, 3000);
+    }, 2000);
+  }
 }
