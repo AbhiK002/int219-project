@@ -51,6 +51,7 @@ nav a.active {
     text-shadow: 0px 0px 4px var(--color-5);
 }
 
+
 header .buttons {
     display: flex;
     gap: 8px
@@ -64,6 +65,7 @@ header .buttons .nav-button {
     padding: 4px 8px;
     gap: 4px;
     cursor: pointer;
+    display: none;
 }
 .nav-button .line {
     border-radius: 16px;
@@ -71,6 +73,63 @@ header .buttons .nav-button {
     height: 6px;
     width: 100%;
     background-color: black;
+}
+.nav-button.inner {
+    display: none;
+}
+
+@media (max-width: 860px) {
+    header .buttons .nav-button {
+        display: flex;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(228, 228, 228, 0.901);
+        backdrop-filter: blur(16px);
+        border-left: 2px solid var(--grey-2);
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        gap: 4px;
+        transform: translate(100%);
+        transition: transform 300ms;
+        box-shadow: none;
+        z-index: 5;
+    }
+
+    nav.visible {
+        transform: translate(0%);
+        box-shadow: -4px 0px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+        font-size: 28px;
+        padding: 16px 4px 16px 32px
+    }
+
+    nav a.active {
+        scale: 1;
+    }
+
+    .nav-button.inner {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+        width: 100%;
+        padding: 4px 16px 24px 8px;
+        top: 20px;
+        right: 0;
+        cursor: pointer;
+    }
+    .nav-button.inner .line {
+        max-width: 48px;
+    }
 }
 
 .cart-button {

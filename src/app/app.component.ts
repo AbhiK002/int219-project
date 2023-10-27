@@ -15,6 +15,6 @@ export class AppComponent {
   }
 
   toggleNavbar() {
-
+    this.navBarVisible = !this.navBarVisible;
   }
 }

@@ -3,7 +3,10 @@
         <img src="/assets/logo.png" alt="[brand logo]" height="60" class="brand-img">
         <h2 class="brand-title">Gismos<span>Online Shopping</span></h2>
     </div>
-    <nav>
+    <nav [ngClass]="navBarVisible ? 'visible' : ''">
+        <div class="nav-button inner" (click)="toggleNavbar()">
+            <span class="line"></span><span class="line"></span><span class="line"></span>
+        </div>
         <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">Home</a>
         <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/login">Login</a>
         <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/orders">Orders</a>
