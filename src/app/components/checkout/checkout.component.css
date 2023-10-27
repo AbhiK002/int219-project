@@ -35,6 +35,12 @@
     object-fit: contain;
 }
 
+.order-details h4:hover, .order-details p:hover {
+    cursor: pointer;
+    color: var(--color-1);
+    text-decoration: underline;
+}
+
 .payment-options {
     display: flex;
     flex-direction: column;

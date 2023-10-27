@@ -1,6 +1,38 @@
-<div [ngSwitch]="pageStatus">
+<!-- <div [ngSwitch]="pageStatus">
     <h2 *ngSwitchCase="101">Loading...</h2>
     <h1 *ngSwitchCase="200">{{product.title}}</h1>
     <h3 *ngSwitchCase="404">Product Not Found</h3>
     <h4 style="color: red" *ngSwitchDefault>Server Error</h4>
-<div>
+<div> -->
+<div class="product-root">
+    <div class="buttons-div">
+        <button class="btn btn-primary" routerLink="/">Back to Home</button>
+    </div>
+    <div class="product-div">
+        <div class="product-image-container" [ngSwitch]="pageStatus">
+            <img *ngSwitchCase="200" [src]="product.photo" [alt]="product.title + ' Image'" width="400">
+            <img *ngSwitchCase="404" src="/assets/notfound.png" class="notfound-img" width="400" alt="">
+        </div>
+        <div class="output" [ngSwitch]="pageStatus">
+            <div class="loading-details" *ngSwitchCase="101">
+                <h1>Loading details...</h1>
+                <span class="loading-sign"></span>
+            </div>
+            <div class="product-details" *ngSwitchCase="200">
+                <h1 class="title">{{product.title}}</h1>
+                <h3 class="desc">{{product.description}}</h3>
+                <h3 class="price">Rs. {{product.price}}</h3>
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-secondary wishlist">Wishlist</button>
+                </div>
+            </div>
+            <div class="not-found-details" *ngSwitchCase="404">
+                <h1>Requested product not found (404)</h1>
+            </div>
+            <div class="server-error-details" *ngSwitchDefault>
+                <h1>Server error</h1>
+            </div>
+        </div>
+    </div>
+</div>

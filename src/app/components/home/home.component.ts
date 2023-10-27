@@ -67,11 +67,6 @@ export class HomeComponent implements OnInit {
     this.heldDownComponent = null;
   }
 
-  clickProduct(product: any) {
-    console.log("clicking");
-    // redirect to the product page for the current product
-  }
-
   addToCart() {
     console.log("added to cart");
   }

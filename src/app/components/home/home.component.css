@@ -182,6 +182,7 @@
 .card-img-top {
     height: 156px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .card-body {

@@ -170,6 +170,11 @@ nav a.active {
     font-size: 20px;
     margin: 0;
 }
+.cart-item-details h6:hover, .cart-item-details span:hover {
+    cursor: pointer;
+    color: var(--color-1);
+    text-decoration: underline;
+}
 .cart-item .cart-item-details .actions {
     padding-top: 4px;
     display: flex;

@@ -17,6 +17,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const productId = params.get('productId');
+      this.pageStatus = 101
 
       this.http.get("/assets/products.json")
       .pipe(

@@ -41,10 +41,10 @@
         <div class="card-container" *ngFor="let product of productsCopy; let i = index" [id]="i"
         [class.pressed]="heldDownComponent == product">
           <div class="card">
-            <img [src]="product.photo" class="card-img-top" alt="Product Image" draggable="false">
+            <img [src]="product.photo" [routerLink]="['/product', product.id]" class="card-img-top" alt="Product Image" draggable="false">
             <div class="card-body">
-              <h5 class="card-title" (click)="clickProduct(product)">{{ product.title }}</h5>
-              <p class="card-price" (click)="clickProduct(product)">Rs.{{ product.price }}</p>
+              <h5 class="card-title" [routerLink]="['/product', product.id]">{{ product.title }}</h5>
+              <p class="card-price" [routerLink]="['/product', product.id]">Rs.{{ product.price }}</p>
               <div class="buttons">
                 <button id="but1" class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
                 <button id="but2" class="btn btn-outline-secondary">Wishlist</button>

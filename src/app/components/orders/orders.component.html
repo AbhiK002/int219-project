@@ -5,8 +5,8 @@
             <li class="order-item" *ngFor="let order of orders; let i = index">
                 <img [src]="order.photo" alt="order photo" width="168">
                 <div class="order-details">
-                    <h4>{{order.title}}</h4>
-                    <h5>{{order.price}}</h5>
+                    <h4 [routerLink]="['/product', order.id]">{{order.title}}</h4>
+                    <h5 [routerLink]="['/product', order.id]">{{order.price}}</h5>
                     <h3>{{order.status}}</h3>
                 </div>
             </li>
