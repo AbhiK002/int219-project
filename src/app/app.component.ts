@@ -8,8 +8,13 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   title = 'Gismos - Online Shopping';
+  navBarVisible = false;
 
   toggleCartPreview() {
     $(".cart-preview").toggleClass("enabled");
+  }
+
+  toggleNavbar() {
+
   }
 }
