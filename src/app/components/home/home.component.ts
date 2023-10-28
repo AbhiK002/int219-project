@@ -113,6 +113,7 @@ export class HomeComponent implements OnInit {
   }
 
   previousScrollPosition: number = 0;
+  running: boolean = false;
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event) {
@@ -121,21 +122,35 @@ export class HomeComponent implements OnInit {
     const currentScrollPosition = window.scrollY;
     const pixelsScrolled = Math.abs(currentScrollPosition - this.previousScrollPosition);
 
-    let range = 10;
-    let angleRange = 8;
-    let intervalPX = 300;
-    cartImg.css("transform", `translateX(${Math.abs(currentScrollPosition % (2*intervalPX) - intervalPX)/intervalPX * range - range/2}px)`);
-    cartImg.css("rotate", `${Math.abs(currentScrollPosition % (2*intervalPX) - intervalPX)/intervalPX * angleRange - angleRange/2}deg`)
-
     if (currentScrollPosition > this.previousScrollPosition) {
-      if (pixelsScrolled > 2) cart.css("rotate", "0deg");
+      if (pixelsScrolled > 2) {
+        cart.css("rotate", "0deg");
+        $(".cart .mini-item").css("rotate", "0deg");
+        $(".cart .mini-item span").css("left", "0%");
+      };
       
     } 
     else if (currentScrollPosition < this.previousScrollPosition) {
-      if (pixelsScrolled > 2) cart.css("rotate", "180deg");
+      if (pixelsScrolled > 2) {
+        cart.css("rotate", "180deg");
+        $(".cart .mini-item").css("rotate", "180deg");
+        $(".cart .mini-item span").css("left", "80%");
+      }
     }
+    
+    if (this.running) return;
+    this.running = true;
+
+    let range = 8;
+    let angleRange = 5;
+    let intervalPX = 500;
+    cartImg.css("transform", `translateX(${Math.abs(currentScrollPosition % (2*intervalPX) - intervalPX)/intervalPX * range - range/2}px)`);
+    cartImg.css("rotate", `${Math.abs(currentScrollPosition % (2*intervalPX) - intervalPX)/intervalPX * angleRange - angleRange/2}deg`)
 
     this.previousScrollPosition = currentScrollPosition;
+    setTimeout(() => {
+      this.running = false;
+    }, 200);
   }
 
   @HostListener('window:mousemove', ['$event'])
