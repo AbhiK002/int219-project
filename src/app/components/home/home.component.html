@@ -34,14 +34,24 @@
     <section class="products-main">
       <aside class="cart-interactive-section">
         <div #cartImage class="interactive-cart">
-          <img src="/assets/cart.png" alt="Cart" (click)="toggleCartPreview()">
+          <div class="cart">
+            <div class="cart-mini-grid">
+              <div class="mini-item" *ngFor="let item of cartElements">
+                <img [src]="item.photo" alt="mini" width="100">
+              </div>
+            </div>
+            <img src="/assets/cart.png" alt="Cart" (click)="toggleCartPreview()">
+          </div>
         </div>
       </aside>
       <div class="row products-grid">
-        <div class="card-container" *ngFor="let product of productsCopy; let i = index" [id]="i"
-        [class.pressed]="heldDownComponent == product">
+        <div class="floating-product-card">
+          <img [src]="heldDownComponent ? heldDownComponent.photo : ''" width="150" aria-hidden="true" alt="floating">
+        </div>
+        <div class="card-container" *ngFor="let product of productsCopy; let i = index" [id]="i" 
+        (mousedown)="selectProduct($event, product)">
           <div class="card">
-            <img [src]="product.photo" [routerLink]="['/product', product.id]" class="card-img-top" alt="Product Image" draggable="false">
+            <img [src]="product.photo" class="card-img-top" alt="Product Image" draggable="false">
             <div class="card-body">
               <h5 class="card-title" [routerLink]="['/product', product.id]">{{ product.title }}</h5>
               <p class="card-price" [routerLink]="['/product', product.id]">Rs.{{ product.price }}</p>
