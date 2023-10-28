@@ -19,7 +19,8 @@ export class HomeComponent implements OnInit {
       "price": 449,
       "category": "Webcams",
       "outOfStock": true,
-      "photo": "/assets/products/1.jpg"
+      "photo": "/assets/products/1.jpg",
+      "count": 1
     },
     {
       "id": "34550",
@@ -28,7 +29,8 @@ export class HomeComponent implements OnInit {
       "price": 20000,
       "category": "Headphones",
       "outOfStock": false,
-      "photo": "/assets/products/14.jpg"
+      "photo": "/assets/products/14.jpg",
+      "count": 1
     },
     {
       "id": "34536",
@@ -37,7 +39,8 @@ export class HomeComponent implements OnInit {
       "price": 88000,
       "category": "Laptop",
       "outOfStock": false,
-      "photo": "/assets/products/17.jpg"
+      "photo": "/assets/products/17.jpg",
+      "count": 1
     }
   ]
 
@@ -93,8 +96,20 @@ export class HomeComponent implements OnInit {
     this.heldDownComponent = product;
   }
 
-  addToCart() {
-    alert("Added to Cart!")
+  addToCart(product: any) {
+    if (this.cartElements.length < 20 && !this.cartElements.includes(product)) {
+      product["count"] = 1;
+      this.cartElements.push(product);
+    }
+    else {
+      this.cartElements = this.cartElements.map((prod: any) => {
+        if (prod.id == product.id) {
+          prod.count += 1;
+        }
+        return prod;
+      })
+    }
+
   }
 
   previousScrollPosition: number = 0;
@@ -125,36 +140,38 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:mousemove', ['$event'])
   onMove(event: MouseEvent) {
+    const target = event.target as HTMLElement;
     const float = $(".floating-product-card");
     let width = float.outerWidth();
     let height = float.outerHeight();
     
     float.css("--mouse-x", (event.clientX - (width ? width/2 : 0)) + 'px');
     float.css("--mouse-y", (event.clientY - (height ? height/2 : 0)) + 'px');
+
+    let touchingCart = target.closest('.interactive-cart');
+    if (this.heldDownComponent && touchingCart) {
+      $(".floating-product-card").css("border-color", "green");
+    }
+    else if (this.heldDownComponent && !touchingCart) {
+      $(".floating-product-card").css("border-color", "rgba(0, 0, 0, 0.5)");
+    }
   }
 
   @HostListener('window:mouseup', ['$event'])
-  onMouseUp(event: MouseEvent) {
+  onMouseUp(event: MouseEvent) {    
+    const target = event.target as HTMLElement;
+    if (this.heldDownComponent && target.closest('.interactive-cart')) {
+      this.addToCart(this.heldDownComponent);
+    }
+    else {
+      $(".floating-product-card").css("border-color", "red");
+    }
+
     this.timeoutID = setTimeout(() => {
       this.heldDownComponent = null;
       const cart = $(".interactive-cart");
       cart.removeClass("shakeSlow");
     }, 300);
     $(".floating-product-card").removeClass("visible");
-    
-    const target = event.target as HTMLElement;
-    if (this.heldDownComponent && target.closest('.interactive-cart')) {
-      $(".floating-product-card").css("border-color", "green");
-      setTimeout(() => {
-        this.addToCart();
-        $(".floating-product-card").css("border-color", "rgba(0, 0, 0, 0.5)");
-      }, 200);
-    }
-    else {
-      $(".floating-product-card").css("border-color", "red");
-      setTimeout(() => {
-        $(".floating-product-card").css("border-color", "rgba(0, 0, 0, 0.5)");
-      }, 200);
-    }
   }
 }

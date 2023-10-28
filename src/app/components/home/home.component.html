@@ -34,13 +34,14 @@
     <section class="products-main">
       <aside class="cart-interactive-section">
         <div #cartImage class="interactive-cart">
-          <div class="cart">
+          <div class="cart" (click)="toggleCartPreview()">
             <div class="cart-mini-grid">
               <div class="mini-item" *ngFor="let item of cartElements">
+                <span class="count">{{item.count}}</span>
                 <img [src]="item.photo" alt="mini" width="100">
               </div>
             </div>
-            <img src="/assets/cart.png" alt="Cart" (click)="toggleCartPreview()">
+            <img src="/assets/cart.png" alt="Cart">
           </div>
         </div>
       </aside>
@@ -56,7 +57,7 @@
               <h5 class="card-title" [routerLink]="['/product', product.id]">{{ product.title }}</h5>
               <p class="card-price" [routerLink]="['/product', product.id]">Rs.{{ product.price }}</p>
               <div class="buttons">
-                <button id="but1" class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+                <button id="but1" class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
                 <button id="but2" class="btn btn-outline-secondary">Wishlist</button>
               </div>
             </div>
