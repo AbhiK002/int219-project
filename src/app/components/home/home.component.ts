@@ -127,6 +127,7 @@ export class HomeComponent implements OnInit {
         cart.css("rotate", "0deg");
         $(".cart .mini-item").css("rotate", "0deg");
         $(".cart .mini-item span").css("left", "0%");
+        $(".cart .mini-item span").css("top", "0%");
       };
       
     } 
@@ -135,6 +136,7 @@ export class HomeComponent implements OnInit {
         cart.css("rotate", "180deg");
         $(".cart .mini-item").css("rotate", "180deg");
         $(".cart .mini-item span").css("left", "80%");
+        $(".cart .mini-item span").css("top", "70%");
       }
     }
     
