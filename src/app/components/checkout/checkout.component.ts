@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent {
-  paymentOptions = ["Cash on Delivery", "UPI", "Gismos Wallet", "Pay Later", "Credit Card", "Debit Card", "Net Banking"]
+  paymentOptions = ["Cash on Delivery", "UPI", "TechMart Wallet", "Pay Later", "Credit Card", "Debit Card", "Net Banking"]
 
   constructor(private router: Router) {}
 

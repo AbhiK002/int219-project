@@ -7,7 +7,7 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Gismos - Online Shopping';
+  title = 'TechMart - Online Shopping';
   navBarVisible = false;
 
   toggleCartPreview() {
