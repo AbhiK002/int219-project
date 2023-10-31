@@ -1,0 +1,362 @@
+[
+  {
+    "id": "34536",
+    "title": "ASUS ROG Strix G15 (2022)",
+    "description": "Ryzen 7 Octa Core AMD R7-6800H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX RTX 3050/144 Hz) G513RC-HN062W Gaming Laptop  (15.6 Inch, Volt Green, 2.10 Kg)",
+    "price": 88000,
+    "category": "Laptop",
+    "outOfStock": false,
+    "photo": "/assets/products/17.jpg"
+  },
+  {
+    "id": "34537",
+    "title": "ASUS TUF Gaming A15",
+    "description": "90Whr Battery Ryzen 7 Octa Core 6800HS - (16 GB/1 TB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3060) FA577RM-HF031WS Gaming Laptop  (15.6 Inch, Jaeger Gray, 2.20 Kg, With MS Office)",
+    "price": 106000,
+    "category": "Laptop",
+    "outOfStock": false,
+    "photo": "/assets/products/26.jpg"
+  },
+  {
+    "id": "34538",
+    "title": "HP Pavilion Gaming",
+    "description": "Ryzen 5 Quad Core 3550H - (8 GB/1 TB HDD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) 15-ec0101AX Gaming Laptop  (15.6 inch, Black, 2.04 kg)",
+    "price": 52000,
+    "category": "Laptop",
+    "outOfStock": true,
+    "photo": "/assets/products/15.jpg"
+  },
+  {
+    "id": "34539",
+    "title": "Razer Viper Ultimate",
+    "description": " Wireless Gaming Mouse with Charging Dock - RZ01-03050100-R3A1 Wireless Optical Gaming Mouse  (2.4GHz Wireless, Black)",
+    "price": 9450,
+    "category": "Mouse",
+    "outOfStock": false,
+    "photo": "/assets/products/11.jpg"
+  },
+  {
+    "id": "34540",
+    "title": "Logitech G304 LightSpeed",
+    "description": "6 Programmable Buttons /Onboard Memory/Adj DPI Upto 12000 Wireless Optical Gaming Mouse  (USB 2.0, Black)",
+    "price": 2594,
+    "category": "Mouse",
+    "outOfStock": true,
+    "photo": "/assets/products/22.jpg"
+  },
+  {
+    "id": "34541",
+    "title": "BenQ ZOWIE EC3-C",
+    "description": "Ergonomic Esports Gaming Usb Mouse | Shorter Overall Length for More Flexibility in Vertical Movement & Flick |Paracord Cable & 24-Step Scroll Wheel | Matte Black Coating | Small Size",
+    "price": 5799,
+    "category": "Mouse",
+    "outOfStock": false,
+    "photo": "/assets/products/21.jpg"
+  },
+  {
+    "id": "34542",
+    "title": "Redgear Shadow Blade Mechanical Keyboard",
+    "description": "Drive Customization, Spectrum LED Lights, Media Control Knob and Wrist Support (Black)",
+    "price": 2199,
+    "category": "Keyboard",
+    "outOfStock": true,
+    "photo": "/assets/products/2.jpg"
+  },
+  {
+    "id": "34543",
+    "title": "Logitech MX Keys S Wireless",
+    "description": "Low Profile, Fluid Precise Quiet Typing, Programmable Keys, Backlighting, Bluetooth, USB C Rechargeable, for Windows PC, Linux, Chrome, Mac - Graphite",
+    "price": 10998,
+    "category": "Keyboard",
+    "outOfStock": false,
+    "photo": "/assets/products/27.jpg"
+  },
+  {
+    "id": "34544",
+    "title": "Ant Esports Gaming Keyboard MK1000 TKL",
+    "description": "Mechanical Multicolor LED Backlit Wired -Black with Outemu RED Switch",
+    "price": 1419,
+    "category": "Keyboard",
+    "outOfStock": false,
+    "photo": "/assets/products/3.jpg"
+  },
+  {
+    "id": "34545",
+    "title": "Belkin 65W",
+    "description": "Gan Dual USB C Pd 3.0 Fast Charger with Pps Technology, Compact Size, USB-C, Type C Fast Charger for iPhone, MacBook Air, Ipad Pro, Pixel, Galaxy, More Device White",
+    "price": 3948,
+    "category": "Chargers",
+    "outOfStock": false,
+    "photo": "/assets/products/7.jpg"
+  },
+  {
+    "id": "34546",
+    "title": "Oneplus 65W",
+    "description": "SUPERVOOC Charger for Oneplus Nord/CE/ 5G / Lite Mobiles Fast Charging",
+    "price": 1399,
+    "category": "Chargers",
+    "outOfStock": false,
+    "photo": "/assets/products/12.jpg"
+  },
+  {
+    "id": "34547",
+    "title": "Portronics Adapto 20 ",
+    "description": "Type C 20w Charger for Android,iPhone 14/ 14 Plus/ 14 Pro/ 14 Pro Max, iPhone 13/13 Pro/13 Pro Max/13 Mini, 12/12 Mini/ 12 Pro Max, iPhone 11 Series With PD 3.0, BIS Certified| USB-C 20 Watt Original Fast Charging Adaptor (White)",
+    "price": 489,
+    "category": "Chargers",
+    "outOfStock": true,
+    "photo": "/assets/products/5.jpg"
+  },
+  {
+    "id": "34548",
+    "title": "Sony WH-1000XM5",
+    "description": "Wireless Industry Leading Active Noise Cancelling Headphones, 8 Mics for Clear Calling, 30Hr Battery, 3 Min Quick Charge = 3 Hours Playback, Multi Point Connectivity, Alexa - Black",
+    "price": 34990,
+    "category": "Headphones",
+    "outOfStock": false,
+    "photo": "/assets/products/6.jpg"
+  },
+  {
+    "id": "34549",
+    "title": "boAt Rockerz 450",
+    "description": "Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Hazel Beige)",
+    "price": 1300,
+    "category": "Headphones",
+    "outOfStock": true,
+    "photo": "/assets/products/19.jpg"
+  },
+  {
+    "id": "34550",
+    "title": "Bose Quietcomfort 45",
+    "description": "Bluetooth Wireless Over Ear Headphones with Mic Noise Cancelling - Triple Black",
+    "price": 20000,
+    "category": "Headphones",
+    "outOfStock": false,
+    "photo": "/assets/products/14.jpg"
+  },
+  {
+    "id": "34551",
+    "title": "SteelSeries New Arctis Nova 7P",
+    "description": "Multi-Platform Gaming & Mobile On Ear Headset Nova Acoustic System Simultaneous Wireless 2.4GHz + Bluetooth 38Hr Battery USB-C PS, PC, Mobile",
+    "price": 18999,
+    "category": "Headsets",
+    "outOfStock": false,
+    "photo": "/assets/products/16.jpg"
+  },
+  {
+    "id": "34552",
+    "title": "HyperX Cloud Stinger 2 Core",
+    "description": "Essential PC Gaming Wired Headset, Lightweight Over-Ear Headset with mic, Swivel-to-Mute Function, 40mm Drivers (683L9AA, Black)",
+    "price": 3090,
+    "category": "Headsets",
+    "outOfStock": false,
+    "photo": "/assets/products/9.jpg"
+  },
+  {
+    "id": "34553",
+    "title": "Logitech G335",
+    "description": "Lightweight Gaming Wired Over Ear Headphones with Mic Flip to Mute 3.5Mm Audio Jack, Memory Foam Earpads, Compatible for Pc, Playstation, Xbox, Nintendo Switch (Black)",
+    "price": 6495,
+    "category": "Headsets",
+    "outOfStock": false,
+    "photo": "/assets/products/18.jpg"
+  },
+  {
+    "id": "34554",
+    "title": "Samsung Galaxy Buds2 Pro",
+    "description": "Bluetooth Truly Wireless in Ear Earbuds with Noise Cancellation (Graphite, with Mic)",
+    "price": 15989,
+    "category": "Earbuds",
+    "outOfStock": false,
+    "photo": "/assets/products/25.jpg"
+  },
+  {
+    "id": "34555",
+    "title": "Oppo Enco Air3 Pro",
+    "description": "True Wireless in Ear Earbuds with Industry First Composite Bamboo Fiber, 49dB ANC, 30H Playtime, 47ms Ultra Low Latency,Fast Charge,BT 5.3 (White)",
+    "price": 4999,
+    "category": "Earbuds",
+    "outOfStock": false,
+    "photo": "/assets/products/20.jpg"
+  },
+  {
+    "id": "34556",
+    "title": "Nothing Ear (2)",
+    "description": "Dual chamber sound, Hi-res audio, Smart ANC and Dual connection Bluetooth Headset  (White, True Wireless)",
+    "price": 8999,
+    "category": "Earbuds",
+    "outOfStock": false,
+    "photo": "/assets/products/24.jpg"
+  },
+  {
+    "id": "34557",
+    "title": "JBL Flip 5",
+    "description": "Wireless Portable Bluetooth Speaker, Signature Sound with Powerful Bass Radiator, Vibrant Colors with Rugged Design, PartyBoost, IPX7 Waterproof & Type C (Without Mic, Black)",
+    "price": 5998,
+    "category": "Speakers",
+    "outOfStock": false,
+    "photo": "/assets/products/4.jpg"
+  },
+  {
+    "id": "34558",
+    "title": "Sony Srs-Xb13",
+    "description": "Wireless Extra Bass Portable Bluetooth Speaker with 16 Hours Battery Life, Type-C, Ip67 Waterproof, Dustproof, Speaker with Mic, Loud Audio for Phone Calls/Work from Home (Blue), Small",
+    "price": 3299,
+    "category": "Speakers",
+    "outOfStock": false,
+    "photo": "/assets/products/8.jpg"
+  },
+  {
+    "id": "34559",
+    "title": "boAt Stone 1200 ",
+    "description": "14W Bluetooth Speaker with Upto 9 Hours Battery, RGB LEDs, IPX7 and TWS Feature(Black)",
+    "price": 2999,
+    "category": "Speakers",
+    "outOfStock": false,
+    "photo": "/assets/products/13.jpg"
+  },
+  {
+    "id": "34560",
+    "title": "ASUS ROG Webcam C3",
+    "description": "1080p HD USB Camera - Beamforming Microphone, Tilt-Adjustable, 360 Degree Rotation, Wide Field of View, Compatible with Skype, Microsoft Teams and Zoom",
+    "price": 7593,
+    "category": "Webcams",
+    "outOfStock": false,
+    "photo": "/assets/products/23.jpg"
+  },
+  {
+    "id": "34561",
+    "title": "Logitech C922 Pro",
+    "description": "Stream Webcam, HD 1080p/30fps or HD 720p/60fps, Digital, Hyperfast Streaming, Stereo Audio, HD Light Correction, Autofocus, for YouTube, Twitch, XSplit - Black (960-001090)",
+    "price": 10300,
+    "category": "Webcams",
+    "outOfStock": false,
+    "photo": "/assets/products/10.jpg"
+  },
+  {
+    "id": "34562",
+    "title": "HP w100 ",
+    "description": "480P 30 FPS Digital Webcam with Built-in Mic, Plug and Play Setup, Wide-Angle View for Video Calling on Skype, Zoom, Microsoft Teams and Other Apps (Black)",
+    "price": 449,
+    "category": "Webcams",
+    "outOfStock": true,
+    "photo": "/assets/products/1.jpg"
+  },
+  {
+    "id": "34563",
+    "title": "Apple MacBook Air (2022)",
+    "description": "13.3-inch Liquid Retina display, M2 chip, 8GB unified memory, 256GB SSD storage, Backlit Magic Keyboard, Touch ID, Force Touch trackpad, 720p FaceTime HD camera, Two Thunderbolt/USB 4 ports, MagSafe 3 charging port.",
+    "price": 114000,
+    "category": "Laptop",
+    "outOfStock": false,
+    "photo": "/assets/products/28.jpg"
+  },
+  {
+    "id": "34564",
+    "title": "Dell XPS 13 (2023)",
+    "description": "13.4-inch InfinityEdge display, Intel Core i7-1360P processor, 16GB LPDDR5 RAM, 512GB PCIe NVMe SSD storage, Backlit keyboard with fingerprint reader, Windows 11 Home, Two Thunderbolt 4 ports, USB-C port, Full-size SD card reader.",
+    "price": 124000,
+    "category": "Laptop",
+    "outOfStock": false,
+    "photo": "/assets/products/29.png"
+  },
+  {
+    "id": "34565",
+    "title": "Microsoft Surface Laptop 4 (2021)",
+    "description": "13.5-inch PixelSense display with 2256 x 1504 resolution, AMD Ryzen 5 4680U processor, 16GB LPDDR4x RAM, 512GB SSD storage, Backlit Alcantara keyboard with fingerprint reader, Windows 11 Home, One USB-C port, One USB-A port, Surface Connect port.",
+    "price": 73000,
+    "category": "Laptop",
+    "outOfStock": false,
+    "photo": "/assets/products/30.jpg"
+  },
+  {
+    "id": "34566",
+    "title": "Logitech MX Master 3S",
+    "description": "Wireless ergonomic mouse with 8000 DPI optical sensor, 7 programmable buttons, MagSpeed scroll wheel, Bluetooth or USB-C receiver, Customizable RGB lighting.",
+    "price": 10995,
+    "category": "Mouse",
+    "outOfStock": false,
+    "photo": "/assets/products/31.jpg"
+  },
+  {
+    "id": "34567",
+    "title": "Microsoft Bluetooth Precision Mouse",
+    "description": "Bluetooth mouse with 4000 DPI optical sensor, 3 programmable buttons, Ergonomic design, Windows 10 or 11 required.",
+    "price": 10480,
+    "category": "Mouse",
+    "outOfStock": false,
+    "photo": "/assets/products/32.jpg"
+  },
+  {
+    "id": "34568",
+    "title": "Ducky One 3 SF Mechanical Keyboard",
+    "description": "65% form factor mechanical keyboard with Cherry MX switches, Double-shot PBT keycaps, RGB backlighting, USB-C connectivity.",
+    "price": 11576,
+    "category": "Keyboard",
+    "outOfStock": false,
+    "photo": "/assets/products/33.jpg"
+  },
+  {
+    "id": "34569",
+    "title": "Razer BlackWidow V3 Mechanical Keyboard",
+    "description": "Full-size mechanical keyboard with Razer Green switches, Doubleshot ABS keycaps, RGB backlighting, USB-C connectivity.",
+    "price": 11100,
+    "category": "Keyboard",
+    "outOfStock": false,
+    "photo": "/assets/products/34.jpg"
+  },
+  {
+    "id": "34570",
+    "title": "Redragon Kumara K552",
+    "description": "A compact mechanical gaming keyboard with rainbow LED backlight and 87 keys featuring dust-proof switches, ergonomic design, anti-ghosting, and multimedia keys.",
+    "price": 2090,
+    "category": "Keyboard",
+    "outOfStock": false,
+    "photo": "/assets/products/40.jpg"
+  },
+  {
+    "id": "34571",
+    "title": "Apple iPhone 13 Pro Max",
+    "description": "The iPhone 13 Pro Max is Apple's most advanced smartphone, with a large 6.7-inch Super Retina XDR display, a triple-lens rear camera system with LiDAR, and the new A15 Bionic chip. It also has a long-lasting battery and a sleek design.",
+    "price": 129900,
+    "category": "Smartphone",
+    "outOfStock": false,
+    "photo": "/assets/products/35.jpg"
+  },
+  {
+    "id": "34572",
+    "title": "Samsung Galaxy S22 Ultra",
+    "description": "The Galaxy S22 Ultra is Samsung's flagship smartphone, with a large 6.8-inch Dynamic AMOLED 2X display, a quad-lens rear camera system with a 108MP main sensor, and the new Snapdragon 8 Gen 1 chip. It also has a built-in S Pen stylus and a long-lasting battery.",
+    "price": 80869,
+    "category": "Smartphone",
+    "outOfStock": false,
+    "photo": "/assets/products/36.jpg"
+  },
+  {
+    "id": "34573",
+    "title": "Google Pixel 6 Pro",
+    "description": "The Pixel 6 Pro is Google's latest flagship smartphone, with a unique design, a triple-lens rear camera system with a 50MP main sensor, and the new Google Tensor chip. It also has a large 6.7-inch AMOLED display and a long-lasting battery.",
+    "price": 47900,
+    "category": "Smartphone",
+    "outOfStock": false,
+    "photo": "/assets/products/37.jpg"
+  },
+  {
+    "id": "34574",
+    "title": "OnePlus 10 Pro",
+    "description": "The OnePlus 10 Pro is OnePlus' latest flagship smartphone, with a large 6.7-inch AMOLED display, a triple-lens rear camera system with a 48MP main sensor, and the new Snapdragon 8 Gen 1 chip. It also has a fast-charging battery and a sleek design.",
+    "price": 52999,
+    "category": "Smartphone",
+    "outOfStock": false,
+    "photo": "/assets/products/38.jpg"
+  },
+  {
+    "id": "34575",
+    "title": "Xiaomi 12 Pro",
+    "description": "The Xiaomi 12 Pro is Xiaomi's latest flagship smartphone, with a large 6.7-inch AMOLED display, a triple-lens rear camera system with a 50MP main sensor, and the new Snapdragon 8 Gen 1 chip. It also has a fast-charging battery and a sleek design.",
+    "price": 41199,
+    "category": "Smartphone",
+    "outOfStock": false,
+    "photo": "/assets/products/39.jpg"
+  }
+]
