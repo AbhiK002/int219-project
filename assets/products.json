@@ -6,7 +6,7 @@
     "price": 88000,
     "category": "Laptop",
     "outOfStock": false,
-    "photo": "/assets/products/17.jpg"
+    "photo": "./assets/products/17.jpg"
   },
   {
     "id": "34537",
@@ -15,7 +15,7 @@
     "price": 106000,
     "category": "Laptop",
     "outOfStock": false,
-    "photo": "/assets/products/26.jpg"
+    "photo": "./assets/products/26.jpg"
   },
   {
     "id": "34538",
@@ -24,7 +24,7 @@
     "price": 52000,
     "category": "Laptop",
     "outOfStock": true,
-    "photo": "/assets/products/15.jpg"
+    "photo": "./assets/products/15.jpg"
   },
   {
     "id": "34539",
@@ -33,7 +33,7 @@
     "price": 9450,
     "category": "Mouse",
     "outOfStock": false,
-    "photo": "/assets/products/11.jpg"
+    "photo": "./assets/products/11.jpg"
   },
   {
     "id": "34540",
@@ -42,7 +42,7 @@
     "price": 2594,
     "category": "Mouse",
     "outOfStock": true,
-    "photo": "/assets/products/22.jpg"
+    "photo": "./assets/products/22.jpg"
   },
   {
     "id": "34541",
@@ -51,7 +51,7 @@
     "price": 5799,
     "category": "Mouse",
     "outOfStock": false,
-    "photo": "/assets/products/21.jpg"
+    "photo": "./assets/products/21.jpg"
   },
   {
     "id": "34542",
@@ -60,7 +60,7 @@
     "price": 2199,
     "category": "Keyboard",
     "outOfStock": true,
-    "photo": "/assets/products/2.jpg"
+    "photo": "./assets/products/2.jpg"
   },
   {
     "id": "34543",
@@ -69,7 +69,7 @@
     "price": 10998,
     "category": "Keyboard",
     "outOfStock": false,
-    "photo": "/assets/products/27.jpg"
+    "photo": "./assets/products/27.jpg"
   },
   {
     "id": "34544",
@@ -78,7 +78,7 @@
     "price": 1419,
     "category": "Keyboard",
     "outOfStock": false,
-    "photo": "/assets/products/3.jpg"
+    "photo": "./assets/products/3.jpg"
   },
   {
     "id": "34545",
@@ -87,7 +87,7 @@
     "price": 3948,
     "category": "Chargers",
     "outOfStock": false,
-    "photo": "/assets/products/7.jpg"
+    "photo": "./assets/products/7.jpg"
   },
   {
     "id": "34546",
@@ -96,7 +96,7 @@
     "price": 1399,
     "category": "Chargers",
     "outOfStock": false,
-    "photo": "/assets/products/12.jpg"
+    "photo": "./assets/products/12.jpg"
   },
   {
     "id": "34547",
@@ -105,7 +105,7 @@
     "price": 489,
     "category": "Chargers",
     "outOfStock": true,
-    "photo": "/assets/products/5.jpg"
+    "photo": "./assets/products/5.jpg"
   },
   {
     "id": "34548",
@@ -114,7 +114,7 @@
     "price": 34990,
     "category": "Headphones",
     "outOfStock": false,
-    "photo": "/assets/products/6.jpg"
+    "photo": "./assets/products/6.jpg"
   },
   {
     "id": "34549",
@@ -123,7 +123,7 @@
     "price": 1300,
     "category": "Headphones",
     "outOfStock": true,
-    "photo": "/assets/products/19.jpg"
+    "photo": "./assets/products/19.jpg"
   },
   {
     "id": "34550",
@@ -132,7 +132,7 @@
     "price": 20000,
     "category": "Headphones",
     "outOfStock": false,
-    "photo": "/assets/products/14.jpg"
+    "photo": "./assets/products/14.jpg"
   },
   {
     "id": "34551",
@@ -141,7 +141,7 @@
     "price": 18999,
     "category": "Headsets",
     "outOfStock": false,
-    "photo": "/assets/products/16.jpg"
+    "photo": "./assets/products/16.jpg"
   },
   {
     "id": "34552",
@@ -150,7 +150,7 @@
     "price": 3090,
     "category": "Headsets",
     "outOfStock": false,
-    "photo": "/assets/products/9.jpg"
+    "photo": "./assets/products/9.jpg"
   },
   {
     "id": "34553",
@@ -159,7 +159,7 @@
     "price": 6495,
     "category": "Headsets",
     "outOfStock": false,
-    "photo": "/assets/products/18.jpg"
+    "photo": "./assets/products/18.jpg"
   },
   {
     "id": "34554",
@@ -168,7 +168,7 @@
     "price": 15989,
     "category": "Earbuds",
     "outOfStock": false,
-    "photo": "/assets/products/25.jpg"
+    "photo": "./assets/products/25.jpg"
   },
   {
     "id": "34555",
@@ -177,7 +177,7 @@
     "price": 4999,
     "category": "Earbuds",
     "outOfStock": false,
-    "photo": "/assets/products/20.jpg"
+    "photo": "./assets/products/20.jpg"
   },
   {
     "id": "34556",
@@ -186,7 +186,7 @@
     "price": 8999,
     "category": "Earbuds",
     "outOfStock": false,
-    "photo": "/assets/products/24.jpg"
+    "photo": "./assets/products/24.jpg"
   },
   {
     "id": "34557",
@@ -195,7 +195,7 @@
     "price": 5998,
     "category": "Speakers",
     "outOfStock": false,
-    "photo": "/assets/products/4.jpg"
+    "photo": "./assets/products/4.jpg"
   },
   {
     "id": "34558",
@@ -204,7 +204,7 @@
     "price": 3299,
     "category": "Speakers",
     "outOfStock": false,
-    "photo": "/assets/products/8.jpg"
+    "photo": "./assets/products/8.jpg"
   },
   {
     "id": "34559",
@@ -213,7 +213,7 @@
     "price": 2999,
     "category": "Speakers",
     "outOfStock": false,
-    "photo": "/assets/products/13.jpg"
+    "photo": "./assets/products/13.jpg"
   },
   {
     "id": "34560",
@@ -222,7 +222,7 @@
     "price": 7593,
     "category": "Webcams",
     "outOfStock": false,
-    "photo": "/assets/products/23.jpg"
+    "photo": "./assets/products/23.jpg"
   },
   {
     "id": "34561",
@@ -231,7 +231,7 @@
     "price": 10300,
     "category": "Webcams",
     "outOfStock": false,
-    "photo": "/assets/products/10.jpg"
+    "photo": "./assets/products/10.jpg"
   },
   {
     "id": "34562",
@@ -240,7 +240,7 @@
     "price": 449,
     "category": "Webcams",
     "outOfStock": true,
-    "photo": "/assets/products/1.jpg"
+    "photo": "./assets/products/1.jpg"
   },
   {
     "id": "34563",
@@ -249,7 +249,7 @@
     "price": 114000,
     "category": "Laptop",
     "outOfStock": false,
-    "photo": "/assets/products/28.jpg"
+    "photo": "./assets/products/28.jpg"
   },
   {
     "id": "34564",
@@ -258,7 +258,7 @@
     "price": 124000,
     "category": "Laptop",
     "outOfStock": false,
-    "photo": "/assets/products/29.png"
+    "photo": "./assets/products/29.png"
   },
   {
     "id": "34565",
@@ -267,7 +267,7 @@
     "price": 73000,
     "category": "Laptop",
     "outOfStock": false,
-    "photo": "/assets/products/30.jpg"
+    "photo": "./assets/products/30.jpg"
   },
   {
     "id": "34566",
@@ -276,7 +276,7 @@
     "price": 10995,
     "category": "Mouse",
     "outOfStock": false,
-    "photo": "/assets/products/31.jpg"
+    "photo": "./assets/products/31.jpg"
   },
   {
     "id": "34567",
@@ -285,7 +285,7 @@
     "price": 10480,
     "category": "Mouse",
     "outOfStock": false,
-    "photo": "/assets/products/32.jpg"
+    "photo": "./assets/products/32.jpg"
   },
   {
     "id": "34568",
@@ -294,7 +294,7 @@
     "price": 11576,
     "category": "Keyboard",
     "outOfStock": false,
-    "photo": "/assets/products/33.jpg"
+    "photo": "./assets/products/33.jpg"
   },
   {
     "id": "34569",
@@ -303,7 +303,7 @@
     "price": 11100,
     "category": "Keyboard",
     "outOfStock": false,
-    "photo": "/assets/products/34.jpg"
+    "photo": "./assets/products/34.jpg"
   },
   {
     "id": "34570",
@@ -312,7 +312,7 @@
     "price": 2090,
     "category": "Keyboard",
     "outOfStock": false,
-    "photo": "/assets/products/40.jpg"
+    "photo": "./assets/products/40.jpg"
   },
   {
     "id": "34571",
@@ -321,7 +321,7 @@
     "price": 129900,
     "category": "Smartphone",
     "outOfStock": false,
-    "photo": "/assets/products/35.jpg"
+    "photo": "./assets/products/35.jpg"
   },
   {
     "id": "34572",
@@ -330,7 +330,7 @@
     "price": 80869,
     "category": "Smartphone",
     "outOfStock": false,
-    "photo": "/assets/products/36.jpg"
+    "photo": "./assets/products/36.jpg"
   },
   {
     "id": "34573",
@@ -339,7 +339,7 @@
     "price": 47900,
     "category": "Smartphone",
     "outOfStock": false,
-    "photo": "/assets/products/37.jpg"
+    "photo": "./assets/products/37.jpg"
   },
   {
     "id": "34574",
@@ -348,7 +348,7 @@
     "price": 52999,
     "category": "Smartphone",
     "outOfStock": false,
-    "photo": "/assets/products/38.jpg"
+    "photo": "./assets/products/38.jpg"
   },
   {
     "id": "34575",
@@ -357,6 +357,6 @@
     "price": 41199,
     "category": "Smartphone",
     "outOfStock": false,
-    "photo": "/assets/products/39.jpg"
+    "photo": "./assets/products/39.jpg"
   }
 ]
