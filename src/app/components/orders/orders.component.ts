@@ -20,7 +20,7 @@ export class OrdersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get("/assets/products.json").subscribe((res: any) => {
+    this.http.get("./assets/products.json").subscribe((res: any) => {
       let temp: any = res;
       for (let i=0; i<this.orders.length; i++) {
         this.orders[i] = temp[this.orders[i] % temp.length]

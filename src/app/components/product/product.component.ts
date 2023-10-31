@@ -19,7 +19,7 @@ export class ProductComponent implements OnInit {
       const productId = params.get('productId');
       this.pageStatus = 101
 
-      this.http.get("/assets/products.json")
+      this.http.get("./assets/products.json")
       .pipe(
         catchError(error => {
           console.log("SERVER ERROR: " + error.status + " " + error.statusText);

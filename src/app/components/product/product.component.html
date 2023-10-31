@@ -11,7 +11,7 @@
     <div class="product-div">
         <div class="product-image-container" [ngSwitch]="pageStatus">
             <img *ngSwitchCase="200" [src]="product.photo" [alt]="product.title + ' Image'" width="400">
-            <img *ngSwitchCase="404" src="/assets/notfound.png" class="notfound-img" width="400" alt="">
+            <img *ngSwitchCase="404" src="./assets/notfound.png" class="notfound-img" width="400" alt="">
         </div>
         <div class="output" [ngSwitch]="pageStatus">
             <div class="loading-details" *ngSwitchCase="101">

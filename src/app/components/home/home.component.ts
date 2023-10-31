@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
       "price": 449,
       "category": "Webcams",
       "outOfStock": true,
-      "photo": "/assets/products/1.jpg",
+      "photo": "./assets/products/1.jpg",
       "count": 1
     },
     {
@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
       "price": 20000,
       "category": "Headphones",
       "outOfStock": false,
-      "photo": "/assets/products/14.jpg",
+      "photo": "./assets/products/14.jpg",
       "count": 1
     },
     {
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
       "price": 88000,
       "category": "Laptop",
       "outOfStock": false,
-      "photo": "/assets/products/17.jpg",
+      "photo": "./assets/products/17.jpg",
       "count": 1
     }
   ]
