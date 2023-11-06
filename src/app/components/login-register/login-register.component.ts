@@ -33,7 +33,7 @@ export class LoginRegisterComponent {
       return false;
     }
     if (this.isRegistering && (!cPassField || cPassField.length == 0)) {
-      alert("Please confirmt the password");
+      alert("Please confirm the password");
       return false;
     }
 
