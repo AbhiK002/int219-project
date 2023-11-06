@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href \"https://AbhiK002.github.io/int219-project/\"",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run build && npx angular-cli-ghpages --dir=dist/techmart"
   },
   "private": true,
   "dependencies": {
