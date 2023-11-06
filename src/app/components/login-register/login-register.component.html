@@ -13,7 +13,7 @@
             </div>
             <div *ngIf="isRegistering" class="form-group">
                 <label for="loginPassword">Confirm Password</label>
-                <input type="password" placeholder="Enter password" id="loginPassword" name="loginPassword" ngModel required
+                <input type="password" placeholder="Enter password" id="loginConfirmPassword" name="loginPassword" ngModel required
                     class="form-control">
             </div>
             <button type="submit" class="btn btn-primary submit-button">{{isRegistering ? "Register" : "Login"}}</button>
